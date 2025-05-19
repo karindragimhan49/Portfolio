@@ -3,23 +3,92 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
-const TAB_DATA = [
+const TAB_DATA = [  
   {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Bash Scripting & Shell Automation</li>
-        <li>CI/CD with GitHub Actions & Jenkins</li>
-        <li>Docker & Kubernetes (Basics)</li>
-        <li>AWS, Azure & Oracle Cloud (Foundations)</li>
-        <li>React, Node.js, Express</li>
-        <li>MongoDB, MySQL</li>
-        <li>Python (Automation & Testing)</li>
-        <li>Linux (WSL/Ubuntu), Nginx, systemd</li>
-      </ul>
-    ),
-  },
+  title: "Skills",
+  id: "skills",
+  content: (
+    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 text-center">
+      {[
+        {
+          src: "https://www.saagie.com/wp-content/uploads/elementor/thumbs/Bash-q3vwhhx7mhmqnccs9u8ukoalpdg5c48vkxo3uvvuo0.png",
+          label: "Bash",
+        },
+        {
+          src: "https://i0.wp.com/build5nines.com/wp-content/uploads/2024/05/GitHub_Actions_Featured_Image_2024.jpg?fit=1200%2C675&ssl=1",
+          label: "GitHub Actions",
+        },
+        {
+          src: "https://www.jenkins.io/images/logos/jenkins/jenkins.svg",
+          label: "Jenkins",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+          label: "Docker",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+          label: "Kubernetes",
+        },
+        {
+          src: "https://miro.medium.com/v2/resize:fit:1400/1*neG4D9C8UcJvNn6bverfIA.png",
+          label: "AWS",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+          label: "Azure",
+        },
+        {
+          src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/512px-Oracle_logo.svg.png",
+          label: "Oracle Cloud",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          label: "React",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+          label: "Node.js",
+        },
+        {
+          src: "https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png",
+          label: "Express",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          label: "MongoDB",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+          label: "MySQL",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          label: "Python",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+          label: "Linux",
+        },
+        {
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+          label: "Nginx",
+        },
+      ].map((skill, index) => (
+        <div key={index} className="flex flex-col items-center opacity-90 hover:opacity-100 transition-opacity">
+          <img
+            src={skill.src}
+            alt={skill.label}
+            width={40}
+            height={40}
+            className="mb-2"
+          />
+          <p className="text-sm text-gray-300">{skill.label}</p>
+        </div>
+      ))}
+    </div>
+  ),
+},
   {
     title: "Education",
     id: "education",
@@ -43,7 +112,7 @@ const TAB_DATA = [
           { src: "/badges/badge3.png", label: "AWS Educate: Cloud Operations" },
           { src: "/badges/badge4.png", label: "Docker Essentials – IBM" },
           { src: "/badges/badge5.png", label: "Oracle Cloud AI Foundations Associate" },
-          { src: "/badges/badge6.png", label: "Microsoft AI Skils Fest" },
+          { src: "/badges/badge6.png", label: "Microsoft AI Skills Fest" },
           { src: "/badges/badge7.png", label: "Python – University of Moratuwa" },
           { src: "/badges/badge8.png", label: "SQL & Relational Databases – IBM" },
           { src: "/badges/badge9.png", label: "Networking Basics – Cisco" },
