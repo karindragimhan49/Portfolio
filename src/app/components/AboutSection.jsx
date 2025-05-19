@@ -95,7 +95,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Sri Lanka Institute of Information Technology (SLIIT)</li>
-        <li>BSc (Hons) in Software Engineering – Specialization in DevOps</li>
+        <li>BSc (Hons) in Information Technology Specialization in Software Engineering (CGPA: 3.1)</li>
         <li>Shariputre College, Matara – G.C.E. A/L (Technology Stream)</li>
         <li>Siridhamma College, Galle – G.C.E. O/L</li>
       </ul>
@@ -116,6 +116,7 @@ const TAB_DATA = [
           { src: "/badges/badge7.png", label: "Python – University of Moratuwa" },
           { src: "/badges/badge8.png", label: "SQL & Relational Databases – IBM" },
           { src: "/badges/badge9.png", label: "Networking Basics – Cisco" },
+          { src: "/badges/badge10.png", label: "IBM Cloud Essentials" },
         ].map((badge, index) => (
           <div key={index} className="flex flex-col items-center">
             <Image
