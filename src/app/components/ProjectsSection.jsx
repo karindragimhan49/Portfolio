@@ -16,38 +16,38 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "LeafLink",
+    description: "Welcome to LeafLink The Finest Tea Collection",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Shavinka2001/LeafLink.git",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Automated Linux Server Setup with CI-CD Integration",
+    description: "A beginner-friendly DevOps project that automates the setup of a Node.js web application on a Linux server using Bash scripts, systemd, Nginx, and GitHub Actions for CI/CD deployment.",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["All", "Devops"],
+    gitUrl: "https://github.com/karindragimhan49/Automated-Linux-Server-Setup-with-CI-CD-Integration.git",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Software Test Automation",
+    description: "This repository contains automated UI and functional test cases written using Python + Selenium WebDrive.",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
+    tag: ["All", "Devops"],
+    gitUrl: "https://github.com/karindragimhan49/Software-Test-Automation-.git",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "PursePulse",
+    description:"Welcome to the Finance Tracker with Currency Converter ! 🎯 This backend powers a Finance Tracker application, providing robust API endpoints to manage user authentication, transactions, goals, budgets, and more.",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/karindragimhan49/PursePulse.git",
     previewUrl: "/",
   },
   {
@@ -56,7 +56,7 @@ const projectsData = [
     description: "Employee-Management-System Public A full-featured Employee Management System with integrated frontend and backend.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/karindragimhan49/Employee-Management-System.git",
     previewUrl: "/",
   },
 ];
@@ -97,8 +97,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Devops"
+          isSelected={tag === "Devops"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
