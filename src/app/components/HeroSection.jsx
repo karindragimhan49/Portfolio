@@ -37,8 +37,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#B0C4DE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+            I'm passionate about building scalable web applications and automating infrastructure with modern DevOps tools.  
+I specialize in fullstack development, CI/CD pipelines, and crafting seamless user experiences.
           </p>
           <div>
             <Link
@@ -47,14 +47,15 @@ const HeroSection = () => {
             >
               Hire Me
             </Link>
-            <Link
-              href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6] hover:opacity-80 text-white mt-3"
-            >
-              <span className="block bg-[#121212] hover:bg-[#1f2937] rounded-full px-5 py-2">
-                Download CV
-              </span>
-            </Link>
+            <a
+  href="/Karindra_CV.pdf"
+  download
+  className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6] hover:opacity-80 text-white mt-3"
+>
+  <span className="block bg-[#121212] hover:bg-[#1f2937] rounded-full px-5 py-2">
+    Download CV
+  </span>
+</a>
           </div>
         </motion.div>
         <motion.div
