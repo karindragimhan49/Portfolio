@@ -4,6 +4,8 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import credly from "../../../public/credly.svg";
+import fb from "../../../public/fb.svg";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -48,14 +50,21 @@ const EmailSection = () => {
           Whether you have a question or just want to say hi, I'll try my best
           to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/karindragimhan49">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link href="https://www.linkedin.com/in/karindragimhan49/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
-        </div>
+         <div className="socials flex flex-row gap-2">
+  <Link href="https://github.com/karindragimhan49">
+    <Image src={GithubIcon} alt="Github Icon" width={32} height={32} />
+  </Link>
+  <Link href="https://www.linkedin.com/in/karindragimhan49/">
+    <Image src={LinkedinIcon} alt="Linkedin Icon" width={32} height={32} />
+  </Link>
+  <Link href="https://www.credly.com/users/karindragimhan49"> {/* use your real profile */}
+    <Image src={credly} alt="Credly Icon" width={32} height={32} />
+  </Link>
+  <Link href="https://www.credly.com/users/karindragimhan49"> {/* use your real profile */}
+    <Image src={fb} alt="fb. Icon" width={32} height={32} />
+  </Link>
+</div>
+
       </div>
       <div>
         {emailSubmitted ? (
