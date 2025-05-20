@@ -7,12 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "countryBook ",
+    description: "CountryBook is a sleek and responsive web application that allows users to explore detailed information about countries from around the world.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/karindragimhan49/countryBook.git",
+    previewUrl: "https://country-book-ten.vercel.app/",
   },
   {
     id: 2,
@@ -52,8 +52,8 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Employee-Management-System ",
+    description: "Employee-Management-System Public A full-featured Employee Management System with integrated frontend and backend.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
