@@ -1,41 +1,36 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import Link from "next/link";
-import Image from "next/image";
 import credly from "../../../public/credly.svg";
 import fb from "../../../public/fb.svg";
+import Link from "next/link";
+import Image from "next/image";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const form = useRef();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
 
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
+    emailjs
+      .sendForm(
+        "service_nclba1n",     // Replace with your actual Service ID
+        "template_lu9ekda",    // Replace with your actual Template ID
+        form.current,
+        "M_h5MxvCDbJvT76NN"      // Replace with your actual Public Key
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent!", result.text);
+          setEmailSubmitted(true);
+        },
+        (error) => {
+          console.error("Email sending error:", error.text);
+        }
+      );
   };
 
   return (
@@ -44,6 +39,7 @@ const EmailSection = () => {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#1e3a8a] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
         <p className="text-[#B0C4DE] mb-4 max-w-md">
@@ -61,7 +57,7 @@ const EmailSection = () => {
           <Link href="https://www.credly.com/users/karindragimhan49">
             <Image src={credly} alt="Credly Icon" width={32} height={32} />
           </Link>
-          <Link href="https://www.facebook.com/"> {/* Replace with your real profile URL */}
+          <Link href="https://www.facebook.com/">
             <Image src={fb} alt="Facebook Icon" width={32} height={32} />
           </Link>
         </div>
@@ -71,12 +67,9 @@ const EmailSection = () => {
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">Email sent successfully!</p>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit} className="flex flex-col">
             <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
-              >
+              <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
                 Your email
               </label>
               <input
@@ -89,10 +82,7 @@ const EmailSection = () => {
               />
             </div>
             <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
-              >
+              <label htmlFor="subject" className="text-white block text-sm mb-2 font-medium">
                 Subject
               </label>
               <input
@@ -105,10 +95,7 @@ const EmailSection = () => {
               />
             </div>
             <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-white block text-sm mb-2 font-medium"
-              >
+              <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">
                 Message
               </label>
               <textarea
