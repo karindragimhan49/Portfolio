@@ -63,10 +63,12 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <button className="ml-4 px-5 py-2 rounded-full bg-gradient-to-r from-blue-800 to-blue-600 text-white font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-[#121212]">
-                  Hire Me
-                </button>
-              </li>
+  <Link href="/#contact">
+    <button className="ml-4 px-5 py-2 rounded-full bg-gradient-to-r from-blue-800 to-blue-600 text-white font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-[#121212]">
+      Hire Me
+    </button>
+  </Link>
+</li>
             </ul>
           </div>
 
