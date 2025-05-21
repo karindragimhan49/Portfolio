@@ -26,7 +26,7 @@ const HeroSection = () => {
                 1000,
                 "Cloud & DevOps",
                 1000,
-                "FullstackDeveloper",
+                "Fullstack Developer",
                 1000,
                 "UI/UX Designer",
                 1000,
@@ -37,8 +37,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#B0C4DE] text-base sm:text-lg mb-6 lg:text-xl">
-            I'm passionate about building scalable web applications and automating infrastructure with modern DevOps tools.  
-I specialize in fullstack development, CI/CD pipelines, and crafting seamless user experiences.
+            I&apos;m passionate about building scalable web applications and automating
+            infrastructure with modern DevOps tools. I specialize in fullstack
+            development, CI/CD pipelines, and crafting seamless user experiences.
           </p>
           <div>
             <Link
@@ -48,16 +49,17 @@ I specialize in fullstack development, CI/CD pipelines, and crafting seamless us
               Hire Me
             </Link>
             <a
-  href="/Karindra_CV.pdf"
-  download
-  className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6] hover:opacity-80 text-white mt-3"
->
-  <span className="block bg-[#121212] hover:bg-[#1f2937] rounded-full px-5 py-2">
-    Download CV
-  </span>
-</a>
+              href="/Karindra_CV.pdf"
+              download
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6] hover:opacity-80 text-white mt-3"
+            >
+              <span className="block bg-[#121212] hover:bg-[#1f2937] rounded-full px-5 py-2">
+                Download CV
+              </span>
+            </a>
           </div>
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -67,10 +69,11 @@ I specialize in fullstack development, CI/CD pipelines, and crafting seamless us
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/hero-image.png"
-              alt="hero image"
+              alt="Hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
+              priority
             />
           </div>
         </motion.div>
