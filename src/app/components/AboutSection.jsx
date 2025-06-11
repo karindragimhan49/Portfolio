@@ -100,7 +100,7 @@ const TAB_DATA = [
         <li>Sri Lanka Institute of Information Technology (SLIIT)</li>
         <li>
           BSc (Hons) in Information Technology Specialization in Software
-          Engineering (CGPA: 3.1)
+          Engineering 
         </li>
         <li>Shariputre College, Matara – G.C.E. A/L (Technology Stream)</li>
         <li>Siridhamma College, Galle – G.C.E. O/L</li>
