@@ -174,14 +174,12 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a DevOps-focused software engineering undergraduate from SLIIT,
-            with a strong interest in automation, CI/CD pipelines, and cloud
-            infrastructure. I&apos;ve worked on real-world projects involving Linux
-            server automation, Docker, GitHub Actions, Node.js deployment, and
-            microservices architecture. I&apos;m passionate about scalable and reliable
-            systems, and constantly exploring tools like Jenkins, AWS, and
-            Kubernetes. I enjoy working in collaborative environments and am always
-            eager to learn and contribute to meaningful projects.
+            BSc (Hons) Software Engineering undergraduate (3rd year, 1st semester) actively seeking a
+DevOps internship. Strong focus on DevOps practices with a career goal in DevOps-related roles.
+Passionate about automation, CI/CD pipelines, infrastructure as code, and cloud-native
+technologies. Enthusiastic about building scalable, reliable systems and continuously improving
+delivery processes. Also experienced in fullstack development, with a strong willingness to learn,
+adapt, and grow in collaborative tech environments.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
