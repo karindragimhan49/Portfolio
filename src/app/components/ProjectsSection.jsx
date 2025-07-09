@@ -42,6 +42,15 @@ const projectsData = [
     previewUrl: "/",
   },
   {
+    id: 7,
+    title: "CodeSnippetVault",
+    description: "A fully containerized MERN Stack application with a complete CI/CD pipeline using Docker, GitHub Actions, and cloud deployment.",
+    image: "/images/projects/7.png",
+    tag: ["All", "Devops"],
+    gitUrl: "https://github.com/karindragimhan49/CodeSnippetVault",
+    previewUrl: "https://code-snippet-vault-if81.vercel.app/",
+  },
+  {
     id: 5,
     title: "PursePulse",
     description:"Welcome to the Finance Tracker with Currency Converter ! 🎯 This backend powers a Finance Tracker application, providing robust API endpoints to manage user authentication, transactions, goals, budgets, and more.",
@@ -58,6 +67,24 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/karindragimhan49/Employee-Management-System.git",
     previewUrl: "/",
+  },
+  {
+    id: 8,
+    title: "Linkhub",
+    description: "This repository contains the source code for LinkHub, a modern, full-stack link management application, and the complete infrastructure code to deploy it on AWS using a fully automated, serverless CI/CD pipeline.",
+    image: "/images/projects/8.jpg",
+    tag: ["All", "Devops"],
+    gitUrl: "https://github.com/karindragimhan49/Linkhub",
+    previewUrl: "http://linkhub-alb-751319465.us-east-1.elb.amazonaws.com/",
+  },
+  {
+    id: 9,
+    title: "Aws-Log-Analyzer-SRE-Project",
+    description: "An automated log analysis and resiliency framework using AWS services and Python, built for a TechOps/SRE learning project.",
+    image: "/images/projects/9.png",
+    tag: ["All", "Devops"],
+    gitUrl: "https://github.com/karindragimhan49/Aws-Log-Analyzer-SRE-Project",
+    previewUrl: "https://github.com/karindragimhan49/Aws-Log-Analyzer-SRE-Project",
   },
 ];
 
